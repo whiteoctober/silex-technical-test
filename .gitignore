@@ -1,12 +1,5 @@
-# Bootstrap
-app/bootstrap*
-
-# Symfony directories
+# Vendor directories
 vendor/*
-*/logs/*
-*/cache/*
-web/uploads/*
-web/bundles/*
 
-# Configuration files
-app/config/parameters.ini
+# Sqlite DB
+src/app.db

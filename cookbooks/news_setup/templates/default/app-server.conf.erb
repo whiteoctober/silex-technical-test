@@ -1,0 +1,23 @@
+server {
+
+  server_name localhost news.local.dev;
+
+  root /vagrant/web;
+  index index.html index.htm;
+
+  location / {
+    try_files $uri /index.php;
+  }
+
+  location ~ \.php(/.*)?$ {
+    include <%= node[:nginx][:dir] %>/fastcgi_params;
+  }
+
+  location ~ /\.ht {
+    deny all;
+  }
+}
+
+upstream fpm_backend {
+  server 127.0.0.1:9000;
+}
