@@ -53,4 +53,7 @@ If you'd like to go the extra mile then maybe do some of the following
 * Come up with a better solution to the setup route for setting up.
 * Add paging with [Pagerfanta](https://github.com/whiteoctober/Pagerfanta)
 * The database structure is a bit basic, add some more fields suitable for a news site
+* Doctrine ORM to manage articles, installed with composer? 
+	* https://github.com/mjakubowski/nutwerk-orm-extension 
+	* http://martinsikora.com/silex-doctrine2-orm
 * Anything else you'd like to show us.
