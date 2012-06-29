@@ -34,7 +34,7 @@ You should be able to visit http://33.33.33.3/1 to view article 1.
 The Tasks
 ------
 * Create a new route matching "/", the home route. 
-	* Load in the last 10 articles in the database
+	* Load in the latest 10 articles in the database
 	* Display them in a list to the user displaying title and short description. 
 	* Give the user a link to click to view the full article.
 * Modify the article view route to display the article, rather than the simple test that is currently there.
@@ -52,4 +52,5 @@ If you'd like to go the extra mile then maybe do some of the following
 	* [Behat](http://behat.org/)?
 * Come up with a better solution to the setup route for setting up.
 * Add paging with [Pagerfanta](https://github.com/whiteoctober/Pagerfanta)
+* The database structure is a bit basic, add some more fields suitable for a news site
 * Anything else you'd like to show us.
