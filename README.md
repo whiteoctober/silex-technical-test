@@ -2,15 +2,15 @@ White October Technical Test
 ===============================
 
 This is a simple [Silex](http://silex.sensiolabs.org/) app. We would like you to extend and fix it.
+## Setup
+#### Setup with Vagrant
 
-Setup with Vagrant
------
 This project is setup with [Vagrant](http://vagrantup.com) and comes with Chef cookbooks. Follow [the setup guide](http://vagrantup.com/v1/docs/getting-started/index.html) to get your machine ready for Vagrant 
 
 Once you have it installed in the project root run "vagrant up". This will provision your box, install [Composer](http://getcomposer.org) and then install your vendors.
 
-Setup with your own PHP Environment 
------
+#### Setup with your own PHP Environment 
+
 You need to be running PHP5.3.3>, a webserver (Apache/Nginx) and the PHP extension sqlite. [Composer](http://getcomposer.org) is used to install Silex and the required vendors.
 
 Install [Composer](http://getcomposer.org):
@@ -21,8 +21,8 @@ Install the vendors:
 
 	php composer.phar install
 	
-Setup the SQLite data
-------
+#### Setup the SQLite data
+
 We have created a very hacky way of getting data into the app. In the project you will find a route called "setup". So the first thing you need to do is visit this route in your browser.
 
 	http://33.33.33.3/setup
