@@ -41,7 +41,6 @@ The Tasks
 * Install Twig Via Composer as per these [instructions](http://silex.sensiolabs.org/doc/providers/twig.html)
 * Rather than responding inline with some html, use [Twig](http://twig.sensiolabs.org/) templates for the home and article routes.  
 * Use [twitter bootstrap](http://twitter.github.com/bootstrap/) for your templates 
-* Fix any security issues you may find
 
 Extras..
 ------
@@ -56,4 +55,4 @@ If you'd like to go the extra mile then maybe do some of the following
 * Doctrine ORM to manage articles, installed with composer? 
 	* https://github.com/mjakubowski/nutwerk-orm-extension 
 	* http://martinsikora.com/silex-doctrine2-orm
-* Anything else you'd like to show us.
+* Anything else you'd like to show us or fix
