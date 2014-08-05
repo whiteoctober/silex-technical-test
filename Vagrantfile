@@ -13,7 +13,7 @@ Vagrant::Config.run do |config|
   # doesn't already exist on the user's system.
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
   config.vm.network :hostonly, "33.33.33.3"
-  config.vm.share_folder("v-root", "/vagrant", ".", :nfs => !RUBY_PLATFORM.downcase.include?("w32"))
+  config.vm.share_folder("vagrant-root", "/vagrant", ".", :nfs => !RUBY_PLATFORM.downcase.include?("w32"))
 
   config.vm.provision :chef_solo do |chef|
        chef.cookbooks_path = "cookbooks"
