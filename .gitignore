@@ -1,6 +1,9 @@
 # Vagrant
 .vagrant/*
 
+# Apache
+!.htaccess
+
 # Vendor directories
 vendor/*
 
