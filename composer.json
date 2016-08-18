@@ -1,5 +1,6 @@
 {
     "require": {
+        "php": ">5.3.3",
         "silex/silex": "1.0.*",
 		"doctrine/dbal": "2.2.*"
     },
