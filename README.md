@@ -3,15 +3,22 @@ White October Technical Test
 
 This is a simple [Silex](http://silex.sensiolabs.org/) app. We would like you to extend and fix it.
 ## Setup
+
+You can optionally use Vagrant or your own PHP environment to set up this project.
+
 #### Setup with Vagrant
 
-This project is setup with [Vagrant](http://vagrantup.com) and comes with Chef cookbooks. Follow [the setup guide](http://vagrantup.com/v1/docs/getting-started/index.html) to get your machine ready for Vagrant
+This project is setup with [Vagrant](http://vagrantup.com). See the [instructions on how to install vagrant](https://www.vagrantup.com/docs/installation/) to get started.
 
 Once you have it installed in the project root run "vagrant up". This will provision your box, install [Composer](http://getcomposer.org) and then install your vendors.
 
-#### Setup with your own PHP Environment
+#### Your own PHP environment requirements
 
-You need to be running PHP5.3.3>, a webserver (Apache/Nginx) and the PHP extension sqlite. [Composer](http://getcomposer.org) is used to install Silex and the required vendors.
+You need to be running PHP5.3.3>, a webserver (Apache/Nginx) and the PHP extension sqlite. You should point your webserver to the `/public` directory in this project.
+
+#### Install composer vendors
+
+[Composer](http://getcomposer.org) is used to install Silex and the required vendors.
 
 Install [Composer](http://getcomposer.org):
 
