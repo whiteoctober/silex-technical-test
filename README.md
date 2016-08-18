@@ -54,7 +54,7 @@ Extras..
 If you'd like to go the extra mile then maybe do some of the following
 
 * Add tests
-	* [PHPUnit](http://www.phpunit.de/manual/current/en/index.html)?
+	* [PHPUnit](http://www.phpunit.de)?
 	* [Behat](http://behat.org/)?
 * Come up with a better solution to the setup route for setting up.
 * Add paging with [Pagerfanta](https://github.com/whiteoctober/Pagerfanta)
