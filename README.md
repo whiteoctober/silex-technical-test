@@ -32,11 +32,11 @@ Install the vendors:
 
 We have created a very hacky way of getting data into the app. In the project you will find a route called "setup". So the first thing you need to do is visit this route in your browser.
 
-	http://192.168.33.10//setup
+	http://192.168.33.10/setup
 
 This should respond with a "done"
 
-You should be able to visit http://192.168.33.10//1 to view article 1.
+You should be able to visit http://192.168.33.10/1 to view article 1.
 
 The Tasks
 ------
