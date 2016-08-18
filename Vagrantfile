@@ -1,27 +1,14 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-Vagrant::Config.run do |config|
-  # All Vagrant configuration is done here. The most common configuration
-  # options are documented and commented below. For a complete reference,
-  # please see the online documentation at vagrantup.com.
+Vagrant.configure("2") do |config|
 
-  # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "precise32"
+    config.vm.box = "scotch/box"
+    config.vm.network "private_network", ip: "192.168.33.10"
+    config.vm.hostname = "scotchbox"
+    config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
 
-  # The url from where the 'config.vm.box' box will be fetched if it
-  # doesn't already exist on the user's system.
-  config.vm.box_url = "http://files.vagrantup.com/precise32.box"
-  config.vm.network :hostonly, "33.33.33.3"
-  config.vm.share_folder("vagrant-root", "/vagrant", ".", :nfs => !RUBY_PLATFORM.downcase.include?("w32"))
+    # Optional NFS. Make sure to remove other synced_folder line too
+    #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
 
-  config.vm.provision :chef_solo do |chef|
-       chef.cookbooks_path = "cookbooks"
-       chef.add_recipe "news_setup"
-       chef.json.merge!({
-           :mysql => {
-              :server_root_password => ""
-           }
-       })
-  end
 end
